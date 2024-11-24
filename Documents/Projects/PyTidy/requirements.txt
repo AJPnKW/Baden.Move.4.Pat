@@ -1,0 +1,55 @@
+# REQUIREMENTS FOR PYTIDY PROJECT
+# ================================
+# This file lists all required dependencies for the PyTidy project.
+# Each dependency includes comments on its purpose and additional troubleshooting steps.
+
+# TESTING FRAMEWORK
+pytest==7.4.0
+# Purpose: Framework for running test cases.
+# Install: pip install pytest
+# Reinstall: pip install --force-reinstall pytest
+
+# YAML SUPPORT
+PyYAML==6.0
+# Purpose: Handles YAML configuration files for project settings.
+# Install: pip install PyYAML
+# Troubleshooting:
+# - If you encounter build errors (e.g., `subprocess-exited-with-error`), follow these steps:
+#   1. Upgrade pip, setuptools, and wheel:
+#      pip install --upgrade pip setuptools wheel
+#   2. For pre-built wheels to bypass build issues, use:
+#      pip install PyYAML --no-build-isolation
+#   3. If the issue persists on Windows, install Visual C++ Build Tools:
+#      Download from https://visualstudio.microsoft.com/visual-cpp-build-tools/
+#      Ensure you install the "C++ Build Tools" workload.
+
+# HASHING
+xxhash==3.3.0
+# Purpose: Provides faster file hashing for duplicate detection compared to MD5/SHA256.
+# Install: pip install xxhash
+# Reinstall: pip install --force-reinstall xxhash
+
+# OPTIONAL DEPENDENCIES (STANDARD LIBRARY INCLUDED BY DEFAULT)
+# These are not included in pip installation as they are part of Python's standard library.
+# You don't need to install them, but they are used in the code:
+# - pathlib: For path and file manipulation.
+# - hashlib: For file hashing.
+# - concurrent.futures: For multithreading.
+# - json: For JSON serialization and deserialization.
+# - pickle: For Python object serialization.
+# - multiprocessing: For parallelism.
+
+# INSTALLATION COMMANDS
+# =====================
+# Install all dependencies:
+# pip install -r requirements.txt
+
+# Upgrade all dependencies to their latest versions:
+# pip install --upgrade -r requirements.txt
+
+# Reinstall all dependencies in case of corruption:
+# pip install --force-reinstall -r requirements.txt
+
+# NOTE
+# - If you're on a new system, always ensure pip, setuptools, and wheel are up to date:
+#   pip install --upgrade pip setuptools wheel

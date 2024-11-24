@@ -1,0 +1,17 @@
+# .gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs, cache, results
+logs/
+results/
+cache/
+
+# Configuration overrides
+config/*.yaml
+!config/default_config.yaml
+
+# Environment files
+.env
