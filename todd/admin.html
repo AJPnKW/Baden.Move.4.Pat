@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Metadata Editor</title>
+  <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+<div class="nav">
+  <h3>Admin Panel</h3>
+  <ul>
+    <li><a href="admin.html">Metadata Editor</a></li>
+    <li><a href="../index.html">Exit Admin</a></li>
+  </ul>
+</div>
+<div class="content">
+  <h2>Metadata Editor (All JSON Files)</h2>
+  <label for="fileSelect">Choose metadata file to edit:</label>
+  <select id="fileSelect">
+    <option value="todo_winston.json">Winston To-Do</option>
+    <option value="todo_todd.json">Todd To-Do</option>
+    <option value="projectplan.json">Project Plan</option>
+    <option value="decisions.json">Decision Tracker</option>
+    <option value="gallery.json">Gallery Metadata</option>
+  </select>
+  <br><br>
+  <textarea id="editor" rows="20" cols="100">{}</textarea>
+  <br>
+  <button onclick="save()">Download as JSON</button>
+  <script>
+    function save() {
+      const blob = new Blob([document.getElementById('editor').value], { type: "application/json" });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = document.getElementById('fileSelect').value;
+      a.click();
+    }
+    document.getElementById('fileSelect').addEventListener('change', function() {
+      fetch('../meta/' + this.value)
+        .then(response => response.text())
+        .then(data => { document.getElementById('editor').value = data; });
+    });
+    document.getElementById('fileSelect').dispatchEvent(new Event('change'));
+  </script>
+</div>
+</body>
+</html>

@@ -1,1 +1,12 @@
-body{font-family:sans-serif;} .nav{float:left;width:200px} .content{margin-left:210px}
+
+body { font-family: 'Roboto', sans-serif; background:#f4f4f4; margin:0; }
+.nav { width: 240px; float:left; background:#fff; height:100vh; box-shadow: 2px 0 6px rgba(0,0,0,0.1); padding:20px; }
+.nav h3 { color: #2196F3; }
+.nav ul { list-style: none; padding: 0; }
+.nav ul li { margin: 15px 0; }
+.nav ul li a { text-decoration: none; color: #333; font-size: 16px; }
+.nav ul li a:hover { color: #2196F3; }
+.content { margin-left: 260px; padding: 20px; }
+textarea, input, button { font-family: inherit; }
+button.edit-toggle { margin-bottom: 15px; }
+    
