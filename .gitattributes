@@ -1,0 +1,13 @@
+* text=auto
+
+# Treat JSON as text
+*.json text diff
+
+# Treat shell/batch files as scripts
+*.sh text eol=lf
+*.ps1 text
+
+# Handle HTML/JS/CSS consistently
+*.html text
+*.js text
+*.css text

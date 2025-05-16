@@ -1,29 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Access Portal</title><style>body,html{margin:0;padding:0;height:100%;background:black;display:flex;align-items:center;justify-content:center}
-input{background:transparent;border:none;font-size:2em;text-align:center;color:black;caret-color:black;outline:none}</style>
+<head>
+  <meta charset="UTF-8">
+  <title>Baden Move for Pat - Secure Entry</title>
+  <script>
+    function checkPassword(e) {
+      e.preventDefault();
+      const code = document.getElementById('access').value;
+      const redirectMap = {
+        "wInStOn": "winston/index.html",
+        "tOdD": "todd/index.html",
+        "aLEx": "alex/index.html"
+      };
+      window.location.href = redirectMap[code] || "https://temu.com";
+    }
+  </script>
 </head>
-<body><form id="gate"><input id="secret" type="text" autofocus placeholder=""/></form>
-<script>
-async function hashPassword(pwd) {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(pwd);
-  const hashBuffer = await crypto.subtle.digest('SHA-256', data);
-  return Array.from(new Uint8Array(hashBuffer)).map(b => b.toString(16).padStart(2, '0')).join('');
-}
-document.getElementById('gate').addEventListener('submit', async e => {
-  e.preventDefault();
-  const keyword = document.getElementById('secret').value.trim();
-  const routes = {
-    "wInStOn": "winston",
-    "tOdD": "todd",
-    "aLEx": "alex"
-  };
-  if (routes[keyword]) {
-    location.href = `${routes[keyword]}/index.html`;
-  } else {
-    location.href = 'https://temu.com';
-  }
-});
-</script></body></html>
+<body style="background-color:black; display:flex; justify-content:center; align-items:center; height:100vh;">
+  <form onsubmit="checkPassword(event)">
+    <input id="access" type="password" style="font-size:2rem;" autofocus placeholder="Enter Access Code"/>
+  </form>
+</body>
+</html>

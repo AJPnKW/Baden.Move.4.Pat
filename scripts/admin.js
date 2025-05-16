@@ -1,1 +1,1 @@
-// Admin password logic, change + reset UI (placeholder)
+// Full admin logic would be implemented here (login, edit metadata, etc.)

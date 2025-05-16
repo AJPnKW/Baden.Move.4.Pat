@@ -1,0 +1,43 @@
+# System-specific noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Windows/PowerShell temp files
+*.tmp
+*.bak
+*.swp
+ehthumbs.db
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs and backups
+*.log
+*.err
+*.old
+logs/
+backup/
+
+# Project ZIPs and working folders
+Code.Download/
+*.zip
+
+# Node/npm (in case tools/scripts are added later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# GitHub Pages build artifacts (if any toolchain added)
+_site/
+.cache/
+dist/
+
+# Ignore metadata backups, optional temp assets
+temp/
+export/
+__pycache__/
+.env
+

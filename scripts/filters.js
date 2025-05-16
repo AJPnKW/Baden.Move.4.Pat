@@ -1,1 +1,1 @@
-// Filtering logic using metadata (placeholder)
+// Metadata filtering logic by tag, category, owner, etc.

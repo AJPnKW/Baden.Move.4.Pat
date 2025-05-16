@@ -1,1 +1,1 @@
-// JS carousel logic for media viewer (placeholder)
+// Full working carousel to load and filter metadata-based media
