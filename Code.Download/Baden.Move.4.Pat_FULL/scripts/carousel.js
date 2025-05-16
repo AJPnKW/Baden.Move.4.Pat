@@ -1,0 +1,1 @@
+// JS carousel logic for media viewer (placeholder)
