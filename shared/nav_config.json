@@ -1,0 +1,23 @@
+{
+  "alex": [
+    "Photos",
+    "Documents",
+    "To-Do List"
+  ],
+  "todd": [
+    "Photos",
+    "Work Orders",
+    "Design Files"
+  ],
+  "baden": [
+    "Project Plan",
+    "Gallery",
+    "Designs",
+    "To-Do List"
+  ],
+  "admin": [
+    "All Sites",
+    "Shared Resources",
+    "Logs"
+  ]
+}
