@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Project Access</title>
+  <meta charset="UTF-8" />
+  <title>Access</title>
   <style>
-    body {{
+    body {
       margin: 0;
-      padding: 0;
-      font-family: "Roboto", sans-serif;
-      background-color: #fafafa;
+      background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-    }}
-    .login-box {{
-      background: #fff;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    input {
+      font-size: 2rem;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #000;
+      width: 300px;
+      background: transparent;
       text-align: center;
-    }}
-    input {{
-      padding: 12px;
-      width: 100%;
-      font-size: 16px;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }}
+    }
   </style>
-  <script>
-    function checkPassword(e) {{
-      e.preventDefault();
-      const code = document.getElementById('access').value;
-      const map = {{
-        "wInStOn": "winston/index.html",
-        "tOdD": "todd/index.html",
-        "aLEx": "alex/index.html"
-      }};
-      window.location.href = map[code] || "https://temu.com";
-    }}
-  </script>
 </head>
 <body>
-  <form class="login-box" onsubmit="checkPassword(event)">
-    <h2>Enter Access Code</h2>
-    <input id="access" type="password" placeholder="e.g., wInStOn" autofocus />
-  </form>
+  <input type="password" id="accessCode" placeholder="" autofocus />
+
+  <script>
+    const redirects = {
+      "wInStOn": "baden/index.html",
+      "tOdD": "todd/index.html",
+      "aLEx": "alex/index.html",
+      "bR@ntNEW228$": "admin/index.html"
+    };
+
+    document.getElementById('accessCode').addEventListener('keydown', function(e) {
+      if (e.key === "Enter") {
+        const code = this.value.trim();
+        const dest = redirects[code];
+        if (dest) {
+          window.location.href = dest;
+        } else {
+          window.location.href = "https://temu.com";
+        }
+      }
+    });
+  </script>
 </body>
 </html>
