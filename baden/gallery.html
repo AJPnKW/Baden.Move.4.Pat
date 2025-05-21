@@ -2,27 +2,34 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Gallery Metadata</title>
-  <link rel="stylesheet" href="../shared/styles.css">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="/Baden.Move.4.Pat/shared/styles.css">
 </head>
 <body>
-<div class="nav">
-  <h3>Gallery Metadata</h3>
-  <ul>
-    <li><a href="../meta/gallery.json" download>Download JSON</a></li>
-    <li><a href="datavault.html">← Back to Data Vault</a></li>
-  </ul>
-</div>
-<div class="content">
-  <h2>Gallery Metadata</h2>
-  <pre id="jsonDisplay">Loading...</pre>
+  <nav>
+    <h2>Gallery Menu</h2>
+    <ul id="navList"></ul>
+  </nav>
+  <main>
+    <h1>Gallery</h1>
+    <p>This is the Gallery page.</p>
+  </main>
   <script>
-    fetch("../meta/gallery.json")
+    fetch("/Baden.Move.4.Pat/shared/nav_config.json")
       .then(res => res.json())
-      .then(data => {
-        document.getElementById("jsonDisplay").textContent = JSON.stringify(data, null, 2);
+      .then(navData => {
+        const navList = document.getElementById('navList');
+        const items = navData['baden'];
+        items.forEach(item => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.textContent = item;
+          const link = item.toLowerCase().replace(/\s+/g, '_').replace(/–/g, '-').replace(/[^\w-]/g, '') + ".html";
+          a.href = link;
+          li.appendChild(a);
+          navList.appendChild(li);
+        });
       });
   </script>
-</div>
 </body>
 </html>

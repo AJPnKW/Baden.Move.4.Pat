@@ -11,10 +11,9 @@
     <ul id="navList"></ul>
   </nav>
   <main>
-    <h1>Alex Dashboard</h1>
-    <p>Welcome to the Alex site. Select an option from the menu.</p>
+    <h1>Alex</h1>
+    <p>This is the Alex page.</p>
   </main>
-
   <script>
     fetch("/Baden.Move.4.Pat/shared/nav_config.json")
       .then(res => res.json())
@@ -25,7 +24,8 @@
           const li = document.createElement('li');
           const a = document.createElement('a');
           a.textContent = item;
-          a.href = item.toLowerCase().replace(/\s+/g, '_') + '.html';
+          const link = item.toLowerCase().replace(/\s+/g, '_').replace(/–/g, '-').replace(/[^\w-]/g, '') + ".html";
+          a.href = link;
           li.appendChild(a);
           navList.appendChild(li);
         });
