@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Access</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    input {
-      font-size: 2rem;
-      padding: 10px;
-      border: none;
-      outline: none;
-      border-bottom: 2px solid #000;
-      width: 300px;
-      background: transparent;
-      text-align: center;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baden Move for Pat</title>
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <input type="password" id="accessCode" placeholder="" autofocus />
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Project Case Study</p>
+      <h1>Baden Move for Pat</h1>
+      <p class="lede">
+        A lightweight project-management case study covering move coordination,
+        renovation planning, possession cutover, and phased transition work.
+      </p>
+      <div class="actions">
+        <a href="Docs/01-project-skinny.md">Start With The Project Skinny</a>
+        <a href="Docs/03-phase-plan.md" class="ghost">View The Phase Plan</a>
+      </div>
+    </section>
 
-  <script>
-    const redirects = {
-      "wInStOn": "baden/index.html",
-      "tOdD": "todd/index.html",
-      "aLEx": "alex/index.html",
-      "bR@ntNEW228$": "admin/index.html"
-    };
+    <section class="grid">
+      <article class="card">
+        <h2>What This Covers</h2>
+        <ul>
+          <li>sale-side preparation and staging</li>
+          <li>renovation research and option analysis</li>
+          <li>overlap occupancy and move sequencing</li>
+          <li>utility and service cutovers</li>
+          <li>decision tracking and issue handling</li>
+        </ul>
+      </article>
 
-    document.getElementById('accessCode').addEventListener('keydown', function(e) {
-      if (e.key === "Enter") {
-        const code = this.value.trim();
-        const dest = redirects[code];
-        if (dest) {
-          window.location.href = dest;
-        } else {
-          window.location.href = "https://temu.com";
-        }
-      }
-    });
-  </script>
+      <article class="card">
+        <h2>What Was Removed</h2>
+        <ul>
+          <li>private working dashboards</li>
+          <li>pseudo-password gating</li>
+          <li>raw logistics and personal notes</li>
+          <li>vendor paperwork and sensitive artifacts</li>
+          <li>placeholder-heavy internal workspace pages</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card docs">
+      <h2>Documentation</h2>
+      <nav>
+        <a href="Docs/01-project-skinny.md">01. Project Skinny</a>
+        <a href="Docs/02-context-and-constraints.md">02. Context And Constraints</a>
+        <a href="Docs/03-phase-plan.md">03. Phase Plan</a>
+        <a href="Docs/04-decision-log.md">04. Decision Log</a>
+        <a href="Docs/05-issue-log.md">05. Issue Log</a>
+        <a href="Docs/06-change-log.md">06. Change Log</a>
+        <a href="Docs/07-qa-validation-summary.md">07. QA And Validation Summary</a>
+        <a href="Docs/08-outcomes-and-lessons.md">08. Outcomes And Lessons</a>
+      </nav>
+    </section>
+  </main>
 </body>
 </html>

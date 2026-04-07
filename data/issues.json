@@ -1,0 +1,12 @@
+[
+  {
+    "issue": "Scope was partially discovered during execution.",
+    "impact": "The plan could not be fully fixed at the start.",
+    "response": "Used progressive clarification and lightweight change tracking."
+  },
+  {
+    "issue": "Renovation timing and move timing were coupled.",
+    "impact": "Partial changes could create workflow breakdowns.",
+    "response": "Handled tightly coupled work as phased dependency management."
+  }
+]

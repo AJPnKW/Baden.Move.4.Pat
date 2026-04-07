@@ -41,3 +41,15 @@ export/
 __pycache__/
 .env
 
+# Private working material should never live in the public case-study repo
+.archive/
+.data/
+.docs/
+.logs/
+private/
+workspace-private/
+quotes/
+paperwork/
+raw-photos/
+vendor-comparisons/
+

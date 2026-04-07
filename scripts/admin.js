@@ -1,1 +1,0 @@
-// Full admin logic would be implemented here (login, edit metadata, etc.)

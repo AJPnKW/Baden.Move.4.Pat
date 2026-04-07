@@ -1,0 +1,18 @@
+[
+  {
+    "phase": "sell_side_preparation",
+    "milestone": "House prepared for listing photos and viewings"
+  },
+  {
+    "phase": "new_home_readiness",
+    "milestone": "Critical pre-move renovation decisions made"
+  },
+  {
+    "phase": "overlap_coordination",
+    "milestone": "Mover and self-move lanes defined"
+  },
+  {
+    "phase": "possession_cutover",
+    "milestone": "Essential spaces and services stabilized"
+  }
+]

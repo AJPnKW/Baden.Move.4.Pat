@@ -1,0 +1,17 @@
+[
+  {
+    "area": "scope",
+    "summary": "Treat the work as a move-plus-transition project rather than a simple move.",
+    "reason": "The sale, overlap timing, renovation decisions, and occupancy readiness were interdependent."
+  },
+  {
+    "area": "transport",
+    "summary": "Split mover work from self-move work.",
+    "reason": "Different items, timing windows, and readiness constraints required different handling."
+  },
+  {
+    "area": "renovation",
+    "summary": "Separate must-do-before-move work from deferred work.",
+    "reason": "Some room readiness tasks affected move viability while others could wait."
+  }
+]
