@@ -13,5 +13,15 @@
     "area": "renovation",
     "summary": "Separate must-do-before-move work from deferred work.",
     "reason": "Some room readiness tasks affected move viability while others could wait."
+  },
+  {
+    "area": "planning_model",
+    "summary": "Use lightweight project artifacts instead of heavyweight formal PM packs.",
+    "reason": "The project needed control and traceability, but not administrative overload."
+  },
+  {
+    "area": "validation",
+    "summary": "Treat trial-and-error and research as requirement discovery and scope validation.",
+    "reason": "Some needs only became clear after options and constraints were tested against reality."
   }
 ]

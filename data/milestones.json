@@ -14,5 +14,9 @@
   {
     "phase": "possession_cutover",
     "milestone": "Essential spaces and services stabilized"
+  },
+  {
+    "phase": "closeout",
+    "milestone": "Deferred tasks and lessons learned captured for follow-up"
   }
 ]
