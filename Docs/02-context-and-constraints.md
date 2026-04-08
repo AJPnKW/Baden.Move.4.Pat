@@ -25,7 +25,7 @@ This project covered more than a move. It also included:
 
 ## Management Approach
 
-The project used a PM-light approach:
+The project used a lightweight control approach:
 
 - exploratory planning when scope was still forming
 - targeted decision logs when tradeoffs mattered
@@ -42,7 +42,7 @@ Used when:
 
 - options were still being investigated
 - scope was still being clarified
-- decisions needed proof-of-concept or validation first
+- decisions needed option analysis or validation first
 - partial progress still created value
 
 Examples:

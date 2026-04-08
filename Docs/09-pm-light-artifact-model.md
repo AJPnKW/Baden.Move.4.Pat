@@ -1,4 +1,4 @@
-# PM-Light Artifact Model
+# Project Artifact Model
 
 ## Why This Artifact Set Exists
 
@@ -61,7 +61,7 @@ Purpose:
 Purpose:
 
 - show what was tested or validated
-- connect proof-of-concept work to real planning decisions
+- connect option-validation work to real planning decisions
 - make learning visible as part of delivery
 
 ### 8. Coordination Thread

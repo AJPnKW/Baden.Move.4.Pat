@@ -1,12 +1,12 @@
 # Baden Move for Pat
 
-This repository is a public case study of a real move-and-transition project that combined home sale preparation, staged moving, renovation planning, decision tracking, and day-by-day coordination.
+This repository contains the planning and coordination artifacts for a move-and-transition project that combined home sale preparation, staged moving, renovation planning, decision tracking, and day-by-day coordination.
 
-It is intentionally lightweight and retrospective. The original work evolved over time through trial, planning-to-plan, proof-of-concept thinking, and progressively tighter coordination as dependencies became clearer.
+The project uses a lightweight working structure that keeps scope, timing, dependencies, and decisions visible without unnecessary process overhead.
 
-This is not presented as a large formal PM methodology. It is presented as practical PM-light work: enough structure to control moving parts, decisions, dependencies, and change without burying a personal project in heavyweight process.
+It is organized as a small project: enough structure to coordinate moving parts and change, while still staying practical to maintain during execution.
 
-## What This Public Repo Shows
+## Repository Contents
 
 - a project skinny
 - context and constraints
@@ -17,7 +17,7 @@ This is not presented as a large formal PM methodology. It is presented as pract
 - artifact structure and control approach
 - a sample coordination thread
 
-## What Is Not Public Here
+## Information Boundary
 
 - private family notes
 - detailed logistics
@@ -28,11 +28,11 @@ This is not presented as a large formal PM methodology. It is presented as pract
 
 ## Why This Repo Exists
 
-The goal is to show a practical, small-project management approach applied to a real personal project:
+The goal is to maintain a practical small-project management approach:
 
-- agile where exploration made sense
+- adaptive where exploration was needed
 - more structured where cross-dependent cutover work required sequencing
-- honest documentation of changing scope, constraints, and decisions
+- clear enough to support decisions, changes, and follow-up actions
 
 ## Reading Order
 
@@ -44,5 +44,5 @@ The goal is to show a practical, small-project management approach applied to a 
 6. [Change Log](Docs/06-change-log.md)
 7. [Validation Summary](Docs/07-qa-validation-summary.md)
 8. [Outcomes And Lessons](Docs/08-outcomes-and-lessons.md)
-9. [PM-Light Artifact Model](Docs/09-pm-light-artifact-model.md)
+9. [Project Artifact Model](Docs/09-pm-light-artifact-model.md)
 10. [Coordination Thread](Docs/10-coordination-thread.md)

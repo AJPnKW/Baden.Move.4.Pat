@@ -1,6 +1,6 @@
 # QA And Validation Summary
 
-This public repo intentionally keeps validation at a high level.
+Validation is summarized at a high level in this repository.
 
 ## What Was Validated During The Real Project
 
@@ -20,7 +20,7 @@ This public repo intentionally keeps validation at a high level.
 
 ## Why
 
-The public repo is meant to show project-management thinking and structure, not expose household operational details.
+The repository is meant to show project-management thinking and structure without exposing household operational details.
 
 ## Validation Approach
 
@@ -31,4 +31,4 @@ Validation in this project was pragmatic:
 - test whether a choice was safe to defer
 - test whether partial delivery would create breakage elsewhere
 
-That means validation was not only about quality checking after a decision. It was also part of discovering what the real project scope needed to be.
+That means validation was not only about quality checking after a decision. It was also part of determining what the real project scope needed to be.

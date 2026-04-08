@@ -81,7 +81,7 @@ Key outputs:
 - continue staged unpacking and follow-up work
 - close out remaining issues and lessons learned
 
-This phase turned a successful landing into a sustainable transition. It also created the basis for retrospective learning by separating real issues from temporary move-day noise.
+This phase turned a successful landing into a sustainable transition. It also helped separate real unresolved work from temporary move-day noise.
 
 Key outputs:
 

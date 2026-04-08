@@ -24,4 +24,4 @@ The work involved:
 - frequent scope clarification
 - decisions that had to be made before full information was available
 
-That made a PM-light approach the right fit: small enough to live with, structured enough to control risk.
+That made a lightweight working approach the right fit: small enough to live with, structured enough to control risk.

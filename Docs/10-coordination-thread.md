@@ -3,10 +3,9 @@
 ## Project
 
 - Name: Baden move and transition project
-- Delivery style: PM-light, hybrid exploratory plus cutover coordination
-- Public status: retrospective case study
+- Delivery style: lightweight, hybrid exploratory plus cutover coordination
 
-## Current Public Framing
+## Project Framing
 
 - This was not a simple relocation task
 - The project combined sale preparation, staged move execution, renovation planning, occupancy-readiness thinking, and service cutover coordination
@@ -53,4 +52,4 @@
 - identify the next decision that could not be deferred
 - separate exploratory tasks from execution-locked tasks
 - document what had to be true before the next phase could begin
-- keep a high-level public record while protecting private detail
+- keep the working record concise and usable

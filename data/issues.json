@@ -17,6 +17,6 @@
   {
     "issue": "Learning and trial work created legitimate scope drift pressure.",
     "impact": "The project could have lost coherence if every new idea was treated as equal priority.",
-    "response": "Used PM-light framing to separate exploration from committed execution."
+    "response": "Used a lightweight control model to separate exploration from committed execution."
   }
 ]
